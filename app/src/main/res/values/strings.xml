@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PassowrdGenerator</string>
+    <string name="Number_of_characters">Number of characters:</string>
+    <string name="example_input_characters">78</string>
+    <string name="GENERATE">GENERATE</string>
+    <string name="Include_uppercase_letters">Include uppercase letters</string>
+    <string name="Include_lowercase_letters">Include lowercase letters</string>
+    <string name="Include_numbers">Include numbers</string>
+    <string name="Include_symbols">Include symbols</string>
+    <string name="dialog_example_platform">Platform name</string>
+    <string name="dialog_example_password">Password</string>
+    <string name="popup_edit">Edit</string>
+    <string name="popup_delete">Delete</string>
+    <string name="facebook">Facebook</string>
+    <string name="copy">COPY</string>
+    <string name="todo">TODO</string>
+    <string name="name">Name</string>
+
+    <string name="_10">10</string>
+
+
+</resources>

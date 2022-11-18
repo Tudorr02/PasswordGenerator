@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home_fragment"
+    tools:context=".MainActivity"
+
+    >
+
+
+    <EditText
+        android:id="@+id/input_number_letters"
+        android:layout_width="52dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints="8"
+
+        android:background="@drawable/input_number_of_characters"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:hint="@string/_10"
+
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/grey"
+
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toEndOf="@+id/NumberOfLetters"
+        app:layout_constraintTop_toBottomOf="@+id/Password_result"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/NumberOfLetters"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:text="@string/Number_of_characters"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/Password_result" />
+
+    <Button
+        android:id="@+id/button_generate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/generate_button_background"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/GENERATE"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@id/checkBox_symbols"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_symbols"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_symbols"
+        android:layout_marginTop="20dp"
+         />
+
+    <CheckBox
+        android:id="@+id/checkBox_upper_letters"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:buttonTint="@color/orange"
+
+        android:checked="false"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/Include_uppercase_letters"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Password_result"
+        app:layout_constraintStart_toStartOf="@+id/Password_result"
+        app:layout_constraintTop_toBottomOf="@+id/Password_result"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/checkBox_lower_letters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@color/orange"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/Include_lowercase_letters"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_upper_letters"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_upper_letters"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_upper_letters"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/checkBox_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@color/orange"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/Include_numbers"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_lower_letters"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_lower_letters"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_lower_letters"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/checkBox_symbols"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@color/orange"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/Include_symbols"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_number"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_number"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_number"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/Password_result"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="310dp"
+        android:inputType="textVisiblePassword"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:focusable="false"
+        android:textAlignment="gravity"
+
+        android:autofillHints=""
+        android:background="@drawable/edit_background_passowrd_result"
+
+
+        android:ems="10"
+
+
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageButton
+        android:id="@+id/copy_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/copy_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/Password_result"
+        app:layout_constraintEnd_toEndOf="@+id/Password_result"
+        app:layout_constraintTop_toTopOf="@+id/Password_result"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="370dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/poza_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
