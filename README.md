@@ -1,5 +1,5 @@
 # PasswordGenerator
-> Android Studio
+> _Android Studio project_
 
 As the name says, PasswordGenerator is an application which help us generate random passowrds for online platforms.
 This application was made in Android Studio (using Java programing language) and includes two tabs (fragments).
